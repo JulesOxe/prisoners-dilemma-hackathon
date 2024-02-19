@@ -1,3 +1,5 @@
+package HelperClasses;
+
 public class Pair <A, B>{
     private A first;
     private B second;
