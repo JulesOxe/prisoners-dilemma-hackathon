@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class PrisonerB extends Prisoner {
     public PrisonerB() {
-        teamName = "Peter";
+        teamName = "AlwaysTrue";
     }
 
     public Boolean makeDecision(ArrayList<Boolean> myDecisions, ArrayList<Boolean> opponentDecisions) {
