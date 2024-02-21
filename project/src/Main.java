@@ -9,12 +9,24 @@ import Prisoner.PrisonerE;
 import Prisoner.PrisonerF;
 import Prisoner.PrisonerG;
 import Prisoner.PrisonerH;
+/**
+ *A small hackathon project in which a group of friends can develop several small algorithms
+ * that then compete against each other
+ * in the context of the Prisoner's dilemma.
+ *
+ *
+ * @author Julius Oexle
+ * @version 1.0
+ */
 
+
+/**
+ * Main class to start the evaluation of the tournament.
+ */
 public class Main {
-
-
     public static void main(String[] args) {
 
+        //TODO: Create an object of each class of each participant
         PrisonerA pri1 = new PrisonerA();
         PrisonerA pri2 = new PrisonerA();
         PrisonerB pri3 = new PrisonerB();
@@ -33,11 +45,19 @@ public class Main {
         PrisonerH pri16= new PrisonerH();
 
 
-        Prisoner[] prisoners = {pri1, pri2, pri3, pri4, pri5, pri6, pri7, pri8, pri9, pri10, pri11, pri12, pri13, pri14, pri15, pri16};
+        //TODO: Put every object in this array
+        Prisoner[] prisoners = {
+                pri1, pri2, pri3, pri4,
+                pri5, pri6, pri7, pri8,
+                pri9, pri10, pri11, pri12,
+                pri13, pri14, pri15, pri16
+        };
+
 
         Evaluation evaluates = new PrisonerEvaluation();
 
-        evaluates.evaluation(prisoners);
-
+        //an evaluation is generated, which can be found in the Results.md file
+        //the number of rounds each prisoner should play against each other is 10000 (can be changed)
+        evaluates.evaluation(prisoners, 10000);
     }
 }
