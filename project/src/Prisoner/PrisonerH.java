@@ -24,5 +24,8 @@ public class PrisonerH extends Prisoner {
         return myResult && opponetResult;
     }
 
+    public void reset() {
+    }
+
 }
 

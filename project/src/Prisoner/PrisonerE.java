@@ -17,4 +17,7 @@ public class PrisonerE extends Prisoner {
         }
         return result;
     }
+
+    public void reset() {
+    }
 }

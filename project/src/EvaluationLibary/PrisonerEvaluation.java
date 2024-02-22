@@ -4,6 +4,7 @@ import HelperClasses.Pair;
 import Prisoner.Prisoner;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * Evaluation Class, which calculates the results and generates a result file
@@ -14,7 +15,7 @@ public class PrisonerEvaluation implements Evaluation{
     private final ResultGenerator resultFileGenerator = new ResultFileGenerator();
 
     /**
-     * function, which starts the evaluation of the tournament
+     * starts the evaluation of the tournament
      * @param prisoners: Array with the different Prisoner object of each participant
      * @param numRounds: Number of rounds how often the prisoners should play against each other
      */
@@ -43,16 +44,25 @@ public class PrisonerEvaluation implements Evaluation{
     private Pair<Integer, Integer> evaluatePair(Prisoner p1, Prisoner p2, int numRounds){
         int p1PrisonYears = 0;
         int p2PrisonYears = 0;
-        ArrayList<Boolean> p1Decisions = new ArrayList<>();
-        ArrayList<Boolean> p2Decisions = new ArrayList<>();
+        Boolean p1Decision;
+        Boolean p2Decision;
+        ArrayList<Boolean> p1DecisionsList = new ArrayList<>();
+        ArrayList<Boolean> p2DecisionsList = new ArrayList<>();
 
         for (int i = 0; i < numRounds; i++) {
-            p1Decisions.add(p1.makeDecision(p1Decisions, p2Decisions));
-            p2Decisions.add(p2.makeDecision(p2Decisions, p1Decisions));
+            ArrayList<Boolean> p1DecisionsListCopy = p1DecisionsList;
+            ArrayList<Boolean> p2DecisionsListCopy = p2DecisionsList;
+            p1Decision = p1.makeDecision(p1DecisionsListCopy, p2DecisionsListCopy);
+            p2Decision = p2.makeDecision(p2DecisionsListCopy, p1DecisionsListCopy);
 
-            p1PrisonYears += calculatePrisonYears(p1Decisions.get(i), p2Decisions.get(i));
-            p2PrisonYears += calculatePrisonYears(p2Decisions.get(i), p1Decisions.get(i));
+            p1DecisionsList.add(p1Decision);
+            p2DecisionsList.add(p2Decision);
+
+            p1PrisonYears += calculatePrisonYears(p1DecisionsList.get(i), p2DecisionsList.get(i));
+            p2PrisonYears += calculatePrisonYears(p2DecisionsList.get(i), p1DecisionsList.get(i));
         }
+        p1.reset();
+        p2.reset();
         return new Pair<>(p1PrisonYears, p2PrisonYears);
     }
 

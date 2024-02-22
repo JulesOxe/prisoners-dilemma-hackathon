@@ -12,4 +12,7 @@ public class PrisonerA extends Prisoner {
         return false;
     }
 
+    public void reset() {
+    }
+
 }

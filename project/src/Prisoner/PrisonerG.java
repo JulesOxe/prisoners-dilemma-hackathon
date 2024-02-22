@@ -18,5 +18,9 @@ public class PrisonerG extends Prisoner {
         }
         return result;
     }
+
+    public void reset(){
+        result = false;
+    }
 }
 

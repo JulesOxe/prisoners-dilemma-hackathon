@@ -13,4 +13,7 @@ public class PrisonerC extends Prisoner {
         return random > 5;
     }
 
+    public void reset() {
+    }
+
 }

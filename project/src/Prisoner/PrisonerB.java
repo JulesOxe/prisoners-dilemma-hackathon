@@ -7,7 +7,8 @@ public class PrisonerB extends Prisoner {
         teamName = "AlwaysTrue";
     }
 
-    public Boolean makeDecision(ArrayList<Boolean> myDecisions, ArrayList<Boolean> opponentDecisions) {
-        return true;
+    public Boolean makeDecision(ArrayList<Boolean> myDecisions, ArrayList<Boolean> opponentDecisions) { return true; }
+
+    public void reset() {
     }
 }
