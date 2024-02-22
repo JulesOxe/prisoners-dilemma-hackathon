@@ -9,6 +9,9 @@ import Prisoner.PrisonerE;
 import Prisoner.PrisonerF;
 import Prisoner.PrisonerG;
 import Prisoner.PrisonerH;
+import Prisoner.PrisonerI;
+
+import java.time.chrono.MinguoDate;
 /**
  *A small hackathon project in which a group of friends can develop several small algorithms
  * that then compete against each other
@@ -43,6 +46,8 @@ public class Main {
         PrisonerG pri14= new PrisonerG();
         PrisonerH pri15= new PrisonerH();
         PrisonerH pri16= new PrisonerH();
+        PrisonerI pri17= new PrisonerI();
+        PrisonerI pri18= new PrisonerI();
 
 
         //TODO: Put every object in this array
@@ -50,7 +55,8 @@ public class Main {
                 pri1, pri2, pri3, pri4,
                 pri5, pri6, pri7, pri8,
                 pri9, pri10, pri11, pri12,
-                pri13, pri14, pri15, pri16
+                pri13, pri14, pri15, pri16,
+                pri17, pri18
         };
 
 

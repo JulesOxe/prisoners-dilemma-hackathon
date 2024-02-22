@@ -1,10 +1,11 @@
 package EvaluationLibary;
 
 import HelperClasses.Pair;
+import HelperClasses.PrisonerYearsPair;
+import HelperClasses.Result;
 import Prisoner.Prisoner;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 /**
  * Evaluation Class, which calculates the results and generates a result file
@@ -21,6 +22,8 @@ public class PrisonerEvaluation implements Evaluation{
      */
     public void evaluation(Prisoner[] prisoners, int numRounds) {
         int[][] prisonYearsMatrix = new int[prisoners.length][prisoners.length];
+        int[][] sharedPrisonYearsMatrix = new int[prisoners.length][prisoners.length];
+        int[][] resultPrisonYearsMatrix = new int[prisoners.length][prisoners.length];
         Pair<Integer, Integer> pairResultPrisonYears;
 
         for (int p1 = 0; p1 < prisoners.length; p1++){
@@ -28,9 +31,16 @@ public class PrisonerEvaluation implements Evaluation{
                 pairResultPrisonYears = evaluatePair(prisoners[p1], prisoners[p2], numRounds);
                 prisonYearsMatrix[p1][p2] = pairResultPrisonYears.getFirst();
                 prisonYearsMatrix[p2][p1] = pairResultPrisonYears.getSecond();
+
+                sharedPrisonYearsMatrix[p1][p2] = (pairResultPrisonYears.getFirst() + pairResultPrisonYears.getSecond())/2;
+                sharedPrisonYearsMatrix[p2][p1] = (pairResultPrisonYears.getFirst() + pairResultPrisonYears.getSecond())/2;
+
+                resultPrisonYearsMatrix[p1][p2] = pairResultPrisonYears.getFirst() + pairResultPrisonYears.getSecond();
+                resultPrisonYearsMatrix[p2][p1] = pairResultPrisonYears.getFirst() + pairResultPrisonYears.getSecond();
             }
         }
-        resultFileGenerator.generateResultFile(prisonYearsMatrix, prisoners);
+        Result result = calculateResult(prisonYearsMatrix, sharedPrisonYearsMatrix, resultPrisonYearsMatrix, prisoners);
+        resultFileGenerator.generateResultFile(result);
     }
 
     /**
@@ -81,5 +91,38 @@ public class PrisonerEvaluation implements Evaluation{
             return 3;
         }
         return 1;
+    }
+
+    /**
+     * calculates the total prison years of each participant
+     * @param prisonYearMatrix: Matrix with the prison years of each participant
+     * @param prisoners: Array with the different Prisoner object of each participant
+     * @return Array with the total prison years of each participant
+     */
+    private Result calculateResult (int[][] prisonYearMatrix, int[][] sharedPrisonYearMatrix, int[][] resultPrisonYearsMatrix, Prisoner[] prisoners){
+        ArrayList<PrisonerYearsPair> totalPrisonYearsResults = new ArrayList<>();
+        ArrayList<PrisonerYearsPair> totalSharedPrisonYearsResults = new ArrayList<>();
+        ArrayList<PrisonerYearsPair> totalResultPrisonYearsResults = new ArrayList<>();
+
+        for (int i = 0; i < prisoners.length; i++){
+            int totalPrisonYears = 0;
+            int totalSharedPrisonYears = 0;
+            for (int j = 0; j < prisoners.length; j++){
+                totalPrisonYears += prisonYearMatrix[i][j];
+                totalSharedPrisonYears += sharedPrisonYearMatrix[i][j];
+            }
+            int totalResultPrisonYears = totalPrisonYears + totalSharedPrisonYears;
+            totalPrisonYearsResults.add(new PrisonerYearsPair(prisoners[i], totalPrisonYears));
+            totalSharedPrisonYearsResults.add(new PrisonerYearsPair(prisoners[i], totalSharedPrisonYears));
+            totalResultPrisonYearsResults.add(new PrisonerYearsPair(prisoners[i], totalResultPrisonYears));
+        }
+        Result result = new Result(
+                totalPrisonYearsResults.toArray(PrisonerYearsPair[]::new),
+                totalSharedPrisonYearsResults.toArray(PrisonerYearsPair[]::new),
+                totalResultPrisonYearsResults.toArray(PrisonerYearsPair[]::new),
+                prisonYearMatrix,
+                sharedPrisonYearMatrix,
+                resultPrisonYearsMatrix);
+        return result;
     }
 }
