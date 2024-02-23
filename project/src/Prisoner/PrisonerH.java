@@ -28,4 +28,3 @@ public class PrisonerH extends Prisoner {
     }
 
 }
-

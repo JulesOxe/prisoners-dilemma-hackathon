@@ -10,6 +10,7 @@ public abstract class Prisoner implements DecisionMaking {
 
     /**
      * returns the team name of the participant
+     *
      * @return team name of the participant
      */
     public String getTeamName() {

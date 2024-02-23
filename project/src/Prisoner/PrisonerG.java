@@ -19,7 +19,7 @@ public class PrisonerG extends Prisoner {
         return result;
     }
 
-    public void reset(){
+    public void reset() {
         result = false;
     }
 }

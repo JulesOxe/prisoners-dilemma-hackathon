@@ -1,16 +1,28 @@
 package HelperClasses;
 
-import java.util.Comparator;
-
+/**
+ * This class is used to store the result of the calculation of the total prison years, the shared prison years and the
+ * result prison years. It also stores the matrices of the total prison years, the shared prison years and the result
+ * prison years.
+ */
 public class Result {
-    private PrisonerYearsPair[] totalPrisonYears;
-    private PrisonerYearsPair[] totalSharedPrisonYears;
-    private PrisonerYearsPair[] totalResultPrisonYears;
-    private int [][] prisonYearsMatrix;
-    private int [][] sharedPrisonYearsMatrix;
-    private int [][] resultPrisonYearsMatrix;
+    private final PrisonerYearsPair[] totalPrisonYears;
+    private final PrisonerYearsPair[] totalSharedPrisonYears;
+    private final PrisonerYearsPair[] totalResultPrisonYears;
+    private final int[][] prisonYearsMatrix;
+    private final int[][] sharedPrisonYearsMatrix;
+    private final int[][] resultPrisonYearsMatrix;
 
-
+    /**
+     * Constructor for the Result class.
+     *
+     * @param prisonYears             The total prison years.
+     * @param sharedPrisonYears       The shared prison years.
+     * @param resultPrisonYears       The result prison years.
+     * @param prisonYearsMatrix       The matrix of the total prison years.
+     * @param sharedPrisonYearsMatrix The matrix of the shared prison years.
+     * @param resultPrisonYearsMatrix The matrix of the result prison years.
+     */
     public Result(PrisonerYearsPair[] prisonYears,
                   PrisonerYearsPair[] sharedPrisonYears,
                   PrisonerYearsPair[] resultPrisonYears,
@@ -25,54 +37,57 @@ public class Result {
         this.resultPrisonYearsMatrix = resultPrisonYearsMatrix;
     }
 
+    /**
+     * returns the array with the total prison years of each participant.
+     *
+     * @return The total prison years.
+     */
     public PrisonerYearsPair[] getTotalPrisonYears() {
         return totalPrisonYears;
     }
 
+    /**
+     * returns the array with the shared prison years of each participant.
+     *
+     * @return The shared prison years.
+     */
     public PrisonerYearsPair[] getTotalSharedPrisonYears() {
         return totalSharedPrisonYears;
     }
 
+    /**
+     * returns the array with the result prison years of each participant.
+     *
+     * @return The result prison years.
+     */
     public PrisonerYearsPair[] getTotalResultPrisonYears() {
         return totalResultPrisonYears;
     }
 
+    /**
+     * returns the matrix with the total prison years of each participant.
+     *
+     * @return The matrix of the total prison years.
+     */
     public int[][] getPrisonYearsMatrix() {
         return prisonYearsMatrix;
     }
 
+    /**
+     * returns the matrix with the shared prison years of each participant.
+     *
+     * @return The matrix of the shared prison years.
+     */
     public int[][] getSharedPrisonYearsMatrix() {
         return sharedPrisonYearsMatrix;
     }
 
+    /**
+     * returns the matrix with the result prison years of each participant.
+     *
+     * @return The matrix of the result prison years.
+     */
     public int[][] getResultPrisonYearsMatrix() {
         return resultPrisonYearsMatrix;
     }
-
-    /*public static Comparator<Result> TotalPrisonYearsComparator = new Comparator<Result>() {
-
-        public int compare(Result r1, Result r2) {
-            Integer totalPrisonYears1 = r1.getTotalPrisonYears();
-            Integer totalPrisonYears2 = r2.getTotalPrisonYears();
-            return totalPrisonYears1.compareTo(totalPrisonYears2);
-        }
-    };
-
-    public static Comparator<Result> ToatalSharedPrisonYearsComparator = new Comparator<Result>() {
-
-        public int compare(Result r1, Result r2) {
-            Integer totalSharedPrisonYears1 = r1.getTotalSharedPrisonYears();
-            Integer totalSharedPrisonYears2 = r2.getTotalSharedPrisonYears();
-            return totalSharedPrisonYears1.compareTo(totalSharedPrisonYears2);
-        }
-    };
-
-    public static Comparator<Result> TotalResultPrisonYearsComparator = new Comparator<Result>() {
-
-        public int compare(Result r1, Result r2) {
-            Integer totalResultPrisonYears1 = r1.getTotalPrisonYears();
-            Integer totalResultPrisonYears2 = r2.getTotalPrisonYears();
-            return totalResultPrisonYears1.compareTo(totalResultPrisonYears2);
-        }
-    };*/
 }

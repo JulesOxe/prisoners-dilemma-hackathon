@@ -13,10 +13,9 @@ import Prisoner.PrisonerI;
 
 import java.time.chrono.MinguoDate;
 /**
- *A small hackathon project in which a group of friends can develop several small algorithms
+ * A small hackathon project in which a group of friends can develop several small algorithms
  * that then compete against each other
  * in the context of the Prisoner's dilemma.
- *
  *
  * @author Julius Oexle
  * @version 1.0
@@ -43,27 +42,21 @@ public class Main {
         PrisonerF pri11 = new PrisonerF();
         PrisonerF pri12 = new PrisonerF();
         PrisonerG pri13 = new PrisonerG();
-        PrisonerG pri14= new PrisonerG();
-        PrisonerH pri15= new PrisonerH();
-        PrisonerH pri16= new PrisonerH();
-        PrisonerI pri17= new PrisonerI();
-        PrisonerI pri18= new PrisonerI();
+        PrisonerG pri14 = new PrisonerG();
+        PrisonerH pri15 = new PrisonerH();
+        PrisonerH pri16 = new PrisonerH();
+        PrisonerI pri17 = new PrisonerI();
+        PrisonerI pri18 = new PrisonerI();
 
 
         //TODO: Put every object in this array
-        Prisoner[] prisoners = {
-                pri1, pri2, pri3, pri4,
-                pri5, pri6, pri7, pri8,
-                pri9, pri10, pri11, pri12,
-                pri13, pri14, pri15, pri16,
-                pri17, pri18
-        };
+        Prisoner[] prisoners = {pri1, pri2, pri3, pri4, pri5, pri6, pri7, pri8, pri9, pri10, pri11, pri12, pri13, pri14, pri15, pri16, pri17, pri18};
 
 
         Evaluation evaluates = new PrisonerEvaluation();
 
         //an evaluation is generated, which can be found in the Results.md file
-        //the number of rounds each prisoner should play against each other is 10000 (can be changed)
+        //the number of rounds each prisoner should play against each other is 10.000 (can be changed)
         evaluates.evaluation(prisoners, 10000);
     }
 }

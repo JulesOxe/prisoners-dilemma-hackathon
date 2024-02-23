@@ -2,7 +2,7 @@ package EvaluationLibary;
 
 import HelperClasses.PrisonerYearsPair;
 import HelperClasses.Result;
-import Prisoner.Prisoner;
+
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
@@ -13,116 +13,116 @@ import java.util.Arrays;
  * ResultFileGenerator class, which generates the result file
  */
 
-public class ResultFileGenerator implements ResultGenerator{
+public class ResultFileGenerator implements ResultGenerator {
 
     /**
      * generates the result file
-     * @param prisonYearMatrix: Matrix with the prison years of each participant
-     * @param prisoners: Array with the different Prisoner object of each participant
-     * @param totalPrisonYears: Array with the total prison years of each participant
+     *
+     * @param result: Result object with the result of the tournament
      */
-    public void generateResultFile (Result result){
-
-        String totalPrisonYearsContent = contentGenerator("", result);
-        String sharedPrisonYearsContent = contentGenerator("Shared", result);
-        String totalResultPrisonYearsContent = contentGenerator("Result", result);
-
-        fileGenerator("PrisonYears", totalPrisonYearsContent);
-        fileGenerator("SharedPrisonYears", sharedPrisonYearsContent);
-        fileGenerator("ResultPrisonYears", totalResultPrisonYearsContent);
-
+    public void generateResultFile(Result result) {
+        String content = contentGenerator(result);
+        fileGenerator("Results", content);
     }
 
-    private void fileGenerator(String title, String content){
+    /**
+     * generates the Markdown file with the result content of the tournament
+     *
+     * @param title:   Title of the file
+     * @param content: Content of the file
+     */
+    private void fileGenerator(String title, String content) {
         try {
             File file = new File(title + ".md");
             BufferedWriter writer = new BufferedWriter(new FileWriter(file));
             writer.write(content);
             writer.close();
-        }
-        catch(IOException ioe) {
+        } catch (IOException ioe) {
             System.err.println(ioe.getMessage());
         }
     }
 
-    private String contentGenerator(String contentType, Result result){
+    /**
+     * generates the content of the result file
+     *
+     * @param result: Result object with the result of the tournament
+     * @return String with the content of the result file
+     */
+    private String contentGenerator(Result result) {
         StringBuilder str = new StringBuilder();
-        str.append(String.format("# %s-Results: \n", contentType));
+        str.append("# Results: \n");
         str.append("## Total result: \n");
-        if (contentType.equals("")){
-            str.append(totalResult(contentType, result.getTotalPrisonYears()));
-            str.append("## Team results: \n");
-            str.append(teamResults(result.getTotalPrisonYears(), result.getPrisonYearsMatrix()));
-        } else if (contentType.equals("Shared")) {
-            str.append(totalResult(contentType, result.getTotalSharedPrisonYears()));
-            str.append("## Team results: \n");
-            str.append(teamResults(contentType, result.getTotalSharedPrisonYears(), result.getSharedPrisonYearsMatrix()));
-        } else {
-            str.append(totalResult(contentType, result.getTotalResultPrisonYears()));
-            str.append("## Team results: \n");
-            str.append(teamResults(contentType, result.getTotalResultPrisonYears(), result.getResultPrisonYearsMatrix()));
-        }
+        str.append(totalResult("total", result.getTotalResultPrisonYears()));
+        str.append("## Own prison years: \n");
+        str.append(totalResult("own", result.getTotalPrisonYears()));
+        str.append("## Shared prison years: \n");
+        str.append(totalResult("shared", result.getTotalSharedPrisonYears()));
+        str.append("## Team results: \n");
+        str.append(teamResults(result));
+
         return str.toString();
     }
 
     /**
      * generates the total result (top list) of the tournament
-     * @param totalPrisonYears: Array with the total prison years of each participant
+     *
+     * @param contentType:            Type of the content (total, own, shared)
+     * @param prisonerYearsPairArray: Array with the different PrisonerYearsPair objects
      * @return String with the total result of the tournament
      */
-    private String totalResult (String contentType, PrisonerYearsPair[] prisonerYearsPairArray){
-        Arrays.sort(prisonerYearsPairArray, PrisonerYearsPair.PrisonYearsComparator);
+    private String totalResult(String contentType, PrisonerYearsPair[] prisonerYearsPairArray) {
+        PrisonerYearsPair[] prisonerYearsPairArrayCopy = prisonerYearsPairArray.clone();
+        Arrays.sort(prisonerYearsPairArrayCopy, PrisonerYearsPair.PrisonYearsComparator);
         StringBuilder str = new StringBuilder();
         str.append(String.format("### 1st place: Team %s with %s %s years in prison. \n",
-                prisonerYearsPairArray[0].getFirst().getTeamName(), prisonerYearsPairArray[0].getSecond(), contentType));
+                prisonerYearsPairArrayCopy[0].getFirst().getTeamName(),
+                prisonerYearsPairArrayCopy[0].getSecond(),
+                contentType));
         str.append(String.format("### 2nd place: Team %s with %s %s years in prison. \n",
-                prisonerYearsPairArray[1].getFirst().getTeamName(), prisonerYearsPairArray[1].getSecond(), contentType));
+                prisonerYearsPairArrayCopy[1].getFirst().getTeamName(),
+                prisonerYearsPairArrayCopy[1].getSecond(),
+                contentType));
         str.append(String.format("### 3rd place: Team %s with %s %s years in prison. \n",
-                prisonerYearsPairArray[2].getFirst().getTeamName(), prisonerYearsPairArray[2].getSecond(), contentType));
+                prisonerYearsPairArrayCopy[2].getFirst().getTeamName(),
+                prisonerYearsPairArrayCopy[2].getSecond(),
+                contentType));
         str.append("### Other teams: \n");
-        for(int i = 3; i < prisonerYearsPairArray.length; i++){
+        for (int i = 3; i < prisonerYearsPairArray.length; i++) {
             str.append(String.format("%s. Team %s: %s %s prison years. \n",
-                    i+1, prisonerYearsPairArray[i].getFirst().getTeamName(), prisonerYearsPairArray[i].getSecond(), contentType));
+                    i + 1, prisonerYearsPairArrayCopy[i].getFirst().getTeamName(),
+                    prisonerYearsPairArrayCopy[i].getSecond(),
+                    contentType));
         }
         return str.toString();
     }
 
-    private String teamResults (String contentType, PrisonerYearsPair[] prisonerYearsPairArray, int [][] prisonYearMatrix){
-        StringBuilder str = new StringBuilder();
-        for (int i = 0; i < prisonYearMatrix.length; i++){
-            str.append(String.format("- ### %s: \n", prisonerYearsPairArray[i].getFirst().getTeamName()));
-            str.append(String.format("|Opponent|%s prison years| \n", contentType));
-            str.append("|---|---| \n");
-            for (int j = 0; j < prisonYearMatrix.length; j++){
-                if (i != j) {
-                    str.append(String.format("| %s | %s |\n",
-                            prisonerYearsPairArray[j].getFirst().getTeamName(), prisonYearMatrix[i][j]));
-                }
-            }
-        }
-        return  str.toString();
-    }
-
     /**
      * generates the team results of the tournament
-     * @param prisonYearMatrix: Matrix with the prison years of each participant
-     * @param prisoners: Array with the different Prisoner object of each participant
+     *
+     * @param result: Result object with the result of the tournament
      * @return String with the team results of the tournament
      */
-    private String teamResults (PrisonerYearsPair[] prisonerYearsPairArray, int[][] prisonYearMatrix){
+    private String teamResults(Result result) {
+        PrisonerYearsPair[] teamNames = result.getTotalPrisonYears();
+        int[][] prisonYearMatrix = result.getPrisonYearsMatrix();
+        int[][] sharedPrisonYearMatrix = result.getSharedPrisonYearsMatrix();
+        int[][] resultPrisonYearMatrix = result.getResultPrisonYearsMatrix();
         StringBuilder str = new StringBuilder();
-        for (int i = 0; i < prisonYearMatrix.length; i++){
-            str.append(String.format("- ### %s: \n", prisonerYearsPairArray[i].getFirst().getTeamName()));
-            str.append("|Opponent|Opponent's Prison Years|My Team's Prison Years| \n");
-            str.append("|---|---|---| \n");
-            for (int j = 0; j < prisonYearMatrix.length; j++){
+        for (int i = 0; i < teamNames.length; i++) {
+            str.append(String.format("- ### %s: \n", teamNames[i].getFirst().getTeamName()));
+            str.append("|Opponent|Opponent's Prison Years|My Team's Prison Years|Shared Prison Years|Total PrisonYears| \n");
+            str.append("|---|---|---|---|---| \n");
+            for (int j = 0; j < teamNames.length; j++) {
                 if (i != j) {
-                    str.append(String.format("| %s | %s | %s |\n",
-                            prisonerYearsPairArray[j].getFirst().getTeamName(), prisonYearMatrix[j][i], prisonYearMatrix[i][j]));
+                    str.append(String.format("| %s | %s | %s | %s | %s |\n",
+                            teamNames[j].getFirst().getTeamName(),
+                            prisonYearMatrix[j][i],
+                            prisonYearMatrix[i][j],
+                            sharedPrisonYearMatrix[i][j],
+                            resultPrisonYearMatrix[i][j]));
                 }
             }
         }
-        return  str.toString();
+        return str.toString();
     }
-
 }

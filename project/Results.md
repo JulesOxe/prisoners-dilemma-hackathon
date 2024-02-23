@@ -1,382 +1,422 @@
 # Results: 
 ## Total result: 
-### 1st place: Team AlwaysTrue with 124134 years in prison. 
-### 2nd place: Team AlwaysTrue with 124248 years in prison. 
-### 3rd place: Team OpponentLoop with 153897 years in prison. 
+### 1st place: Team OpponentSavedResult with 379918 total years in prison. 
+### 2nd place: Team OpponentSavedResult with 380055 total years in prison. 
+### 3rd place: Team OpponentLoop with 380109 total years in prison. 
 ### Other teams: 
-4. Team OpponentSavedResult: 154016 prison years. 
-5. Team OpponentSavedResult: 154171 prison years. 
-6. Team OpponentLoop: 154202 prison years. 
-7. Team Random: 183454 prison years. 
-8. Team Random: 184123 prison years. 
-9. Team Tit or Tat: 201981 prison years. 
-10. Team Tit or Tat: 202048 prison years. 
-11. Team AlwaysFalse: 234002 prison years. 
-12. Team AlwaysFalse: 234244 prison years. 
-13. Team MySavedResult: 313909 prison years. 
-14. Team DoubleLoop: 313965 prison years. 
-15. Team MySavedResult: 314033 prison years. 
-16. Team MyLoop: 314035 prison years. 
-17. Team MyLoop: 314099 prison years. 
-18. Team DoubleLoop: 314151 prison years. 
+4. Team OpponentLoop: 380123 total prison years. 
+5. Team Tit or Tat: 404018 total prison years. 
+6. Team Tit or Tat: 404068 total prison years. 
+7. Team AlwaysTrue: 409774 total prison years. 
+8. Team AlwaysTrue: 409874 total prison years. 
+9. Team AlwaysFalse: 419819 total prison years. 
+10. Team AlwaysFalse: 420381 total prison years. 
+11. Team Random: 433848 total prison years. 
+12. Team Random: 434117 total prison years. 
+13. Team DoubleLoop: 519686 total prison years. 
+14. Team MyLoop: 519924 total prison years. 
+15. Team MySavedResult: 519936 total prison years. 
+16. Team MyLoop: 519962 total prison years. 
+17. Team MySavedResult: 519974 total prison years. 
+18. Team DoubleLoop: 520086 total prison years. 
+## Own prison years: 
+### 1st place: Team AlwaysTrue with 123822 own years in prison. 
+### 2nd place: Team AlwaysTrue with 123902 own years in prison. 
+### 3rd place: Team OpponentSavedResult with 153969 own years in prison. 
+### Other teams: 
+4. Team OpponentSavedResult: 154018 own prison years. 
+5. Team OpponentLoop: 154100 own prison years. 
+6. Team OpponentLoop: 154117 own prison years. 
+7. Team Random: 183919 own prison years. 
+8. Team Random: 184191 own prison years. 
+9. Team Tit or Tat: 202012 own prison years. 
+10. Team Tit or Tat: 202036 own prison years. 
+11. Team AlwaysFalse: 233858 own prison years. 
+12. Team AlwaysFalse: 234308 own prison years. 
+13. Team DoubleLoop: 313743 own prison years. 
+14. Team MyLoop: 313931 own prison years. 
+15. Team MySavedResult: 313941 own prison years. 
+16. Team MyLoop: 313961 own prison years. 
+17. Team MySavedResult: 313971 own prison years. 
+18. Team DoubleLoop: 314063 own prison years. 
+## Shared prison years: 
+### 1st place: Team AlwaysFalse with 185961 shared years in prison. 
+### 2nd place: Team AlwaysFalse with 186073 shared years in prison. 
+### 3rd place: Team Tit or Tat with 202006 shared years in prison. 
+### Other teams: 
+4. Team Tit or Tat: 202032 shared prison years. 
+5. Team DoubleLoop: 205943 shared prison years. 
+6. Team MyLoop: 205993 shared prison years. 
+7. Team MySavedResult: 205995 shared prison years. 
+8. Team MyLoop: 206001 shared prison years. 
+9. Team MySavedResult: 206003 shared prison years. 
+10. Team DoubleLoop: 206023 shared prison years. 
+11. Team OpponentSavedResult: 225949 shared prison years. 
+12. Team OpponentLoop: 226006 shared prison years. 
+13. Team OpponentLoop: 226009 shared prison years. 
+14. Team OpponentSavedResult: 226037 shared prison years. 
+15. Team Random: 249926 shared prison years. 
+16. Team Random: 249929 shared prison years. 
+17. Team AlwaysTrue: 285952 shared prison years. 
+18. Team AlwaysTrue: 285972 shared prison years. 
 ## Team results: 
 - ### AlwaysFalse: 
-|Opponent|Opponent's Prison Years|My Team's Prison Years| 
-|---|---|---| 
-| AlwaysFalse | 10000 | 10000 |
-| AlwaysTrue | 0 | 30000 |
-| AlwaysTrue | 0 | 30000 |
-| Random | 3997 | 22006 |
-| Random | 4008 | 21984 |
-| MyLoop | 9999 | 10002 |
-| MyLoop | 9999 | 10002 |
-| OpponentLoop | 10000 | 10000 |
-| OpponentLoop | 10000 | 10000 |
-| MySavedResult | 9999 | 10002 |
-| MySavedResult | 9999 | 10002 |
-| OpponentSavedResult | 10000 | 10000 |
-| OpponentSavedResult | 10000 | 10000 |
-| DoubleLoop | 9999 | 10002 |
-| DoubleLoop | 9999 | 10002 |
-| Tit or Tat | 10000 | 10000 |
-| Tit or Tat | 10000 | 10000 |
+|Opponent|Opponent's Prison Years|My Team's Prison Years|Shared Prison Years|Total PrisonYears| 
+|---|---|---|---|---| 
+| AlwaysFalse | 10000 | 10000 | 10000 | 20000 |
+| AlwaysTrue | 0 | 30000 | 15000 | 30000 |
+| AlwaysTrue | 0 | 30000 | 15000 | 30000 |
+| Random | 3897 | 22206 | 13051 | 26103 |
+| Random | 3955 | 22090 | 13022 | 26045 |
+| MyLoop | 9999 | 10002 | 10000 | 20001 |
+| MyLoop | 9999 | 10002 | 10000 | 20001 |
+| OpponentLoop | 10000 | 10000 | 10000 | 20000 |
+| OpponentLoop | 10000 | 10000 | 10000 | 20000 |
+| MySavedResult | 9999 | 10002 | 10000 | 20001 |
+| MySavedResult | 9999 | 10002 | 10000 | 20001 |
+| OpponentSavedResult | 10000 | 10000 | 10000 | 20000 |
+| OpponentSavedResult | 10000 | 10000 | 10000 | 20000 |
+| DoubleLoop | 9999 | 10002 | 10000 | 20001 |
+| DoubleLoop | 9999 | 10002 | 10000 | 20001 |
+| Tit or Tat | 10000 | 10000 | 10000 | 20000 |
+| Tit or Tat | 10000 | 10000 | 10000 | 20000 |
 - ### AlwaysFalse: 
-|Opponent|Opponent's Prison Years|My Team's Prison Years| 
-|---|---|---| 
-| AlwaysFalse | 10000 | 10000 |
-| AlwaysTrue | 0 | 30000 |
-| AlwaysTrue | 0 | 30000 |
-| Random | 3940 | 22120 |
-| Random | 3944 | 22112 |
-| MyLoop | 9999 | 10002 |
-| MyLoop | 9999 | 10002 |
-| OpponentLoop | 10000 | 10000 |
-| OpponentLoop | 10000 | 10000 |
-| MySavedResult | 9999 | 10002 |
-| MySavedResult | 9999 | 10002 |
-| OpponentSavedResult | 10000 | 10000 |
-| OpponentSavedResult | 10000 | 10000 |
-| DoubleLoop | 9999 | 10002 |
-| DoubleLoop | 9999 | 10002 |
-| Tit or Tat | 10000 | 10000 |
-| Tit or Tat | 10000 | 10000 |
+|Opponent|Opponent's Prison Years|My Team's Prison Years|Shared Prison Years|Total PrisonYears| 
+|---|---|---|---|---| 
+| AlwaysFalse | 10000 | 10000 | 10000 | 20000 |
+| AlwaysTrue | 0 | 30000 | 15000 | 30000 |
+| AlwaysTrue | 0 | 30000 | 15000 | 30000 |
+| Random | 4007 | 21986 | 12996 | 25993 |
+| Random | 4070 | 21860 | 12965 | 25930 |
+| MyLoop | 9999 | 10002 | 10000 | 20001 |
+| MyLoop | 9999 | 10002 | 10000 | 20001 |
+| OpponentLoop | 10000 | 10000 | 10000 | 20000 |
+| OpponentLoop | 10000 | 10000 | 10000 | 20000 |
+| MySavedResult | 9999 | 10002 | 10000 | 20001 |
+| MySavedResult | 9999 | 10002 | 10000 | 20001 |
+| OpponentSavedResult | 10000 | 10000 | 10000 | 20000 |
+| OpponentSavedResult | 10000 | 10000 | 10000 | 20000 |
+| DoubleLoop | 9999 | 10002 | 10000 | 20001 |
+| DoubleLoop | 9999 | 10002 | 10000 | 20001 |
+| Tit or Tat | 10000 | 10000 | 10000 | 20000 |
+| Tit or Tat | 10000 | 10000 | 10000 | 20000 |
 - ### AlwaysTrue: 
-|Opponent|Opponent's Prison Years|My Team's Prison Years| 
-|---|---|---| 
-| AlwaysFalse | 30000 | 0 |
-| AlwaysFalse | 30000 | 0 |
-| AlwaysTrue | 20000 | 20000 |
-| Random | 23951 | 12098 |
-| Random | 23984 | 12032 |
-| MyLoop | 29999 | 2 |
-| MyLoop | 29999 | 2 |
-| OpponentLoop | 25000 | 10000 |
-| OpponentLoop | 25000 | 10000 |
-| MySavedResult | 29999 | 2 |
-| MySavedResult | 29999 | 2 |
-| OpponentSavedResult | 25000 | 10000 |
-| OpponentSavedResult | 25000 | 10000 |
-| DoubleLoop | 30000 | 0 |
-| DoubleLoop | 30000 | 0 |
-| Tit or Tat | 20001 | 19998 |
-| Tit or Tat | 20001 | 19998 |
+|Opponent|Opponent's Prison Years|My Team's Prison Years|Shared Prison Years|Total PrisonYears| 
+|---|---|---|---|---| 
+| AlwaysFalse | 30000 | 0 | 15000 | 30000 |
+| AlwaysFalse | 30000 | 0 | 15000 | 30000 |
+| AlwaysTrue | 20000 | 20000 | 20000 | 40000 |
+| Random | 24078 | 11844 | 17961 | 35922 |
+| Random | 24013 | 11974 | 17993 | 35987 |
+| MyLoop | 29999 | 2 | 15000 | 30001 |
+| MyLoop | 29999 | 2 | 15000 | 30001 |
+| OpponentLoop | 25000 | 10000 | 17500 | 35000 |
+| OpponentLoop | 25000 | 10000 | 17500 | 35000 |
+| MySavedResult | 29999 | 2 | 15000 | 30001 |
+| MySavedResult | 29999 | 2 | 15000 | 30001 |
+| OpponentSavedResult | 25000 | 10000 | 17500 | 35000 |
+| OpponentSavedResult | 25000 | 10000 | 17500 | 35000 |
+| DoubleLoop | 30000 | 0 | 15000 | 30000 |
+| DoubleLoop | 30000 | 0 | 15000 | 30000 |
+| Tit or Tat | 20001 | 19998 | 19999 | 39999 |
+| Tit or Tat | 20001 | 19998 | 19999 | 39999 |
 - ### AlwaysTrue: 
-|Opponent|Opponent's Prison Years|My Team's Prison Years| 
-|---|---|---| 
-| AlwaysFalse | 30000 | 0 |
-| AlwaysFalse | 30000 | 0 |
-| AlwaysTrue | 20000 | 20000 |
-| Random | 23993 | 12014 |
-| Random | 23885 | 12230 |
-| MyLoop | 29999 | 2 |
-| MyLoop | 29999 | 2 |
-| OpponentLoop | 25000 | 10000 |
-| OpponentLoop | 25000 | 10000 |
-| MySavedResult | 29999 | 2 |
-| MySavedResult | 29999 | 2 |
-| OpponentSavedResult | 25000 | 10000 |
-| OpponentSavedResult | 25000 | 10000 |
-| DoubleLoop | 30000 | 0 |
-| DoubleLoop | 30000 | 0 |
-| Tit or Tat | 20001 | 19998 |
-| Tit or Tat | 20001 | 19998 |
+|Opponent|Opponent's Prison Years|My Team's Prison Years|Shared Prison Years|Total PrisonYears| 
+|---|---|---|---|---| 
+| AlwaysFalse | 30000 | 0 | 15000 | 30000 |
+| AlwaysFalse | 30000 | 0 | 15000 | 30000 |
+| AlwaysTrue | 20000 | 20000 | 20000 | 40000 |
+| Random | 24092 | 11816 | 17954 | 35908 |
+| Random | 23959 | 12082 | 18020 | 36041 |
+| MyLoop | 29999 | 2 | 15000 | 30001 |
+| MyLoop | 29999 | 2 | 15000 | 30001 |
+| OpponentLoop | 25000 | 10000 | 17500 | 35000 |
+| OpponentLoop | 25000 | 10000 | 17500 | 35000 |
+| MySavedResult | 29999 | 2 | 15000 | 30001 |
+| MySavedResult | 29999 | 2 | 15000 | 30001 |
+| OpponentSavedResult | 25000 | 10000 | 17500 | 35000 |
+| OpponentSavedResult | 25000 | 10000 | 17500 | 35000 |
+| DoubleLoop | 30000 | 0 | 15000 | 30000 |
+| DoubleLoop | 30000 | 0 | 15000 | 30000 |
+| Tit or Tat | 20001 | 19998 | 19999 | 39999 |
+| Tit or Tat | 20001 | 19998 | 19999 | 39999 |
 - ### Random: 
-|Opponent|Opponent's Prison Years|My Team's Prison Years| 
-|---|---|---| 
-| AlwaysFalse | 22006 | 3997 |
-| AlwaysFalse | 22120 | 3940 |
-| AlwaysTrue | 12098 | 23951 |
-| AlwaysTrue | 12014 | 23993 |
-| Random | 15849 | 16179 |
-| MyLoop | 22039 | 3982 |
-| MyLoop | 21997 | 4003 |
-| OpponentLoop | 16889 | 14099 |
-| OpponentLoop | 16899 | 14019 |
-| MySavedResult | 22055 | 3974 |
-| MySavedResult | 21993 | 4005 |
-| OpponentSavedResult | 17149 | 13969 |
-| OpponentSavedResult | 16910 | 14087 |
-| DoubleLoop | 22017 | 3993 |
-| DoubleLoop | 22107 | 3948 |
-| Tit or Tat | 15991 | 15991 |
-| Tit or Tat | 15996 | 15993 |
+|Opponent|Opponent's Prison Years|My Team's Prison Years|Shared Prison Years|Total PrisonYears| 
+|---|---|---|---|---| 
+| AlwaysFalse | 22206 | 3897 | 13051 | 26103 |
+| AlwaysFalse | 21986 | 4007 | 12996 | 25993 |
+| AlwaysTrue | 11844 | 24078 | 17961 | 35922 |
+| AlwaysTrue | 11816 | 24092 | 17954 | 35908 |
+| Random | 16006 | 15925 | 15965 | 31931 |
+| MyLoop | 21949 | 4027 | 12988 | 25976 |
+| MyLoop | 22117 | 3943 | 13030 | 26060 |
+| OpponentLoop | 16893 | 14067 | 15480 | 30960 |
+| OpponentLoop | 17086 | 13990 | 15538 | 31076 |
+| MySavedResult | 21959 | 4022 | 12990 | 25981 |
+| MySavedResult | 22031 | 3986 | 13008 | 26017 |
+| OpponentSavedResult | 17021 | 14000 | 15510 | 31021 |
+| OpponentSavedResult | 17001 | 13926 | 15463 | 30927 |
+| DoubleLoop | 22179 | 3912 | 13045 | 26091 |
+| DoubleLoop | 21871 | 4066 | 12968 | 25937 |
+| Tit or Tat | 15978 | 15978 | 15978 | 31956 |
+| Tit or Tat | 16006 | 16003 | 16004 | 32009 |
 - ### Random: 
-|Opponent|Opponent's Prison Years|My Team's Prison Years| 
-|---|---|---| 
-| AlwaysFalse | 21984 | 4008 |
-| AlwaysFalse | 22112 | 3944 |
-| AlwaysTrue | 12032 | 23984 |
-| AlwaysTrue | 12230 | 23885 |
-| Random | 16179 | 15849 |
-| MyLoop | 22069 | 3967 |
-| MyLoop | 22047 | 3978 |
-| OpponentLoop | 16988 | 13994 |
-| OpponentLoop | 17283 | 13797 |
-| MySavedResult | 21987 | 4008 |
-| MySavedResult | 21925 | 4039 |
-| OpponentSavedResult | 17002 | 14017 |
-| OpponentSavedResult | 17086 | 13966 |
-| DoubleLoop | 21963 | 4020 |
-| DoubleLoop | 22059 | 3972 |
-| Tit or Tat | 15982 | 15982 |
-| Tit or Tat | 16044 | 16044 |
+|Opponent|Opponent's Prison Years|My Team's Prison Years|Shared Prison Years|Total PrisonYears| 
+|---|---|---|---|---| 
+| AlwaysFalse | 22090 | 3955 | 13022 | 26045 |
+| AlwaysFalse | 21860 | 4070 | 12965 | 25930 |
+| AlwaysTrue | 11974 | 24013 | 17993 | 35987 |
+| AlwaysTrue | 12082 | 23959 | 18020 | 36041 |
+| Random | 15925 | 16006 | 15965 | 31931 |
+| MyLoop | 21991 | 4006 | 12998 | 25997 |
+| MyLoop | 21853 | 4075 | 12964 | 25928 |
+| OpponentLoop | 17187 | 13875 | 15531 | 31062 |
+| OpponentLoop | 17011 | 13930 | 15470 | 30941 |
+| MySavedResult | 21991 | 4006 | 12998 | 25997 |
+| MySavedResult | 21949 | 4027 | 12988 | 25976 |
+| OpponentSavedResult | 16977 | 14082 | 15529 | 31059 |
+| OpponentSavedResult | 16948 | 14029 | 15488 | 30977 |
+| DoubleLoop | 21899 | 4052 | 12975 | 25951 |
+| DoubleLoop | 21887 | 4058 | 12972 | 25945 |
+| Tit or Tat | 16050 | 16050 | 16050 | 32100 |
+| Tit or Tat | 15998 | 15998 | 15998 | 31996 |
 - ### MyLoop: 
-|Opponent|Opponent's Prison Years|My Team's Prison Years| 
-|---|---|---| 
-| AlwaysFalse | 10002 | 9999 |
-| AlwaysFalse | 10002 | 9999 |
-| AlwaysTrue | 2 | 29999 |
-| AlwaysTrue | 2 | 29999 |
-| Random | 3982 | 22039 |
-| Random | 3967 | 22069 |
-| MyLoop | 10001 | 10001 |
-| OpponentLoop | 3 | 29997 |
-| OpponentLoop | 3 | 29997 |
-| MySavedResult | 10001 | 10001 |
-| MySavedResult | 10001 | 10001 |
-| OpponentSavedResult | 3 | 29997 |
-| OpponentSavedResult | 3 | 29997 |
-| DoubleLoop | 10001 | 10001 |
-| DoubleLoop | 10001 | 10001 |
-| Tit or Tat | 10001 | 10001 |
-| Tit or Tat | 10001 | 10001 |
+|Opponent|Opponent's Prison Years|My Team's Prison Years|Shared Prison Years|Total PrisonYears| 
+|---|---|---|---|---| 
+| AlwaysFalse | 10002 | 9999 | 10000 | 20001 |
+| AlwaysFalse | 10002 | 9999 | 10000 | 20001 |
+| AlwaysTrue | 2 | 29999 | 15000 | 30001 |
+| AlwaysTrue | 2 | 29999 | 15000 | 30001 |
+| Random | 4027 | 21949 | 12988 | 25976 |
+| Random | 4006 | 21991 | 12998 | 25997 |
+| MyLoop | 10001 | 10001 | 10001 | 20002 |
+| OpponentLoop | 3 | 29997 | 15000 | 30000 |
+| OpponentLoop | 3 | 29997 | 15000 | 30000 |
+| MySavedResult | 10001 | 10001 | 10001 | 20002 |
+| MySavedResult | 10001 | 10001 | 10001 | 20002 |
+| OpponentSavedResult | 3 | 29997 | 15000 | 30000 |
+| OpponentSavedResult | 3 | 29997 | 15000 | 30000 |
+| DoubleLoop | 10001 | 10001 | 10001 | 20002 |
+| DoubleLoop | 10001 | 10001 | 10001 | 20002 |
+| Tit or Tat | 10001 | 10001 | 10001 | 20002 |
+| Tit or Tat | 10001 | 10001 | 10001 | 20002 |
 - ### MyLoop: 
-|Opponent|Opponent's Prison Years|My Team's Prison Years| 
-|---|---|---| 
-| AlwaysFalse | 10002 | 9999 |
-| AlwaysFalse | 10002 | 9999 |
-| AlwaysTrue | 2 | 29999 |
-| AlwaysTrue | 2 | 29999 |
-| Random | 4003 | 21997 |
-| Random | 3978 | 22047 |
-| MyLoop | 10001 | 10001 |
-| OpponentLoop | 3 | 29997 |
-| OpponentLoop | 3 | 29997 |
-| MySavedResult | 10001 | 10001 |
-| MySavedResult | 10001 | 10001 |
-| OpponentSavedResult | 3 | 29997 |
-| OpponentSavedResult | 3 | 29997 |
-| DoubleLoop | 10001 | 10001 |
-| DoubleLoop | 10001 | 10001 |
-| Tit or Tat | 10001 | 10001 |
-| Tit or Tat | 10001 | 10001 |
+|Opponent|Opponent's Prison Years|My Team's Prison Years|Shared Prison Years|Total PrisonYears| 
+|---|---|---|---|---| 
+| AlwaysFalse | 10002 | 9999 | 10000 | 20001 |
+| AlwaysFalse | 10002 | 9999 | 10000 | 20001 |
+| AlwaysTrue | 2 | 29999 | 15000 | 30001 |
+| AlwaysTrue | 2 | 29999 | 15000 | 30001 |
+| Random | 3943 | 22117 | 13030 | 26060 |
+| Random | 4075 | 21853 | 12964 | 25928 |
+| MyLoop | 10001 | 10001 | 10001 | 20002 |
+| OpponentLoop | 3 | 29997 | 15000 | 30000 |
+| OpponentLoop | 3 | 29997 | 15000 | 30000 |
+| MySavedResult | 10001 | 10001 | 10001 | 20002 |
+| MySavedResult | 10001 | 10001 | 10001 | 20002 |
+| OpponentSavedResult | 3 | 29997 | 15000 | 30000 |
+| OpponentSavedResult | 3 | 29997 | 15000 | 30000 |
+| DoubleLoop | 10001 | 10001 | 10001 | 20002 |
+| DoubleLoop | 10001 | 10001 | 10001 | 20002 |
+| Tit or Tat | 10001 | 10001 | 10001 | 20002 |
+| Tit or Tat | 10001 | 10001 | 10001 | 20002 |
 - ### OpponentLoop: 
-|Opponent|Opponent's Prison Years|My Team's Prison Years| 
-|---|---|---| 
-| AlwaysFalse | 10000 | 10000 |
-| AlwaysFalse | 10000 | 10000 |
-| AlwaysTrue | 10000 | 25000 |
-| AlwaysTrue | 10000 | 25000 |
-| Random | 14099 | 16889 |
-| Random | 13994 | 16988 |
-| MyLoop | 29997 | 3 |
-| MyLoop | 29997 | 3 |
-| OpponentLoop | 10000 | 10000 |
-| MySavedResult | 29997 | 3 |
-| MySavedResult | 29997 | 3 |
-| OpponentSavedResult | 10000 | 10000 |
-| OpponentSavedResult | 10000 | 10000 |
-| DoubleLoop | 29995 | 4 |
-| DoubleLoop | 29995 | 4 |
-| Tit or Tat | 10000 | 10000 |
-| Tit or Tat | 10000 | 10000 |
+|Opponent|Opponent's Prison Years|My Team's Prison Years|Shared Prison Years|Total PrisonYears| 
+|---|---|---|---|---| 
+| AlwaysFalse | 10000 | 10000 | 10000 | 20000 |
+| AlwaysFalse | 10000 | 10000 | 10000 | 20000 |
+| AlwaysTrue | 10000 | 25000 | 17500 | 35000 |
+| AlwaysTrue | 10000 | 25000 | 17500 | 35000 |
+| Random | 14067 | 16893 | 15480 | 30960 |
+| Random | 13875 | 17187 | 15531 | 31062 |
+| MyLoop | 29997 | 3 | 15000 | 30000 |
+| MyLoop | 29997 | 3 | 15000 | 30000 |
+| OpponentLoop | 10000 | 10000 | 10000 | 20000 |
+| MySavedResult | 29997 | 3 | 15000 | 30000 |
+| MySavedResult | 29997 | 3 | 15000 | 30000 |
+| OpponentSavedResult | 10000 | 10000 | 10000 | 20000 |
+| OpponentSavedResult | 10000 | 10000 | 10000 | 20000 |
+| DoubleLoop | 29995 | 4 | 14999 | 29999 |
+| DoubleLoop | 29995 | 4 | 14999 | 29999 |
+| Tit or Tat | 10000 | 10000 | 10000 | 20000 |
+| Tit or Tat | 10000 | 10000 | 10000 | 20000 |
 - ### OpponentLoop: 
-|Opponent|Opponent's Prison Years|My Team's Prison Years| 
-|---|---|---| 
-| AlwaysFalse | 10000 | 10000 |
-| AlwaysFalse | 10000 | 10000 |
-| AlwaysTrue | 10000 | 25000 |
-| AlwaysTrue | 10000 | 25000 |
-| Random | 14019 | 16899 |
-| Random | 13797 | 17283 |
-| MyLoop | 29997 | 3 |
-| MyLoop | 29997 | 3 |
-| OpponentLoop | 10000 | 10000 |
-| MySavedResult | 29997 | 3 |
-| MySavedResult | 29997 | 3 |
-| OpponentSavedResult | 10000 | 10000 |
-| OpponentSavedResult | 10000 | 10000 |
-| DoubleLoop | 29995 | 4 |
-| DoubleLoop | 29995 | 4 |
-| Tit or Tat | 10000 | 10000 |
-| Tit or Tat | 10000 | 10000 |
+|Opponent|Opponent's Prison Years|My Team's Prison Years|Shared Prison Years|Total PrisonYears| 
+|---|---|---|---|---| 
+| AlwaysFalse | 10000 | 10000 | 10000 | 20000 |
+| AlwaysFalse | 10000 | 10000 | 10000 | 20000 |
+| AlwaysTrue | 10000 | 25000 | 17500 | 35000 |
+| AlwaysTrue | 10000 | 25000 | 17500 | 35000 |
+| Random | 13990 | 17086 | 15538 | 31076 |
+| Random | 13930 | 17011 | 15470 | 30941 |
+| MyLoop | 29997 | 3 | 15000 | 30000 |
+| MyLoop | 29997 | 3 | 15000 | 30000 |
+| OpponentLoop | 10000 | 10000 | 10000 | 20000 |
+| MySavedResult | 29997 | 3 | 15000 | 30000 |
+| MySavedResult | 29997 | 3 | 15000 | 30000 |
+| OpponentSavedResult | 10000 | 10000 | 10000 | 20000 |
+| OpponentSavedResult | 10000 | 10000 | 10000 | 20000 |
+| DoubleLoop | 29995 | 4 | 14999 | 29999 |
+| DoubleLoop | 29995 | 4 | 14999 | 29999 |
+| Tit or Tat | 10000 | 10000 | 10000 | 20000 |
+| Tit or Tat | 10000 | 10000 | 10000 | 20000 |
 - ### MySavedResult: 
-|Opponent|Opponent's Prison Years|My Team's Prison Years| 
-|---|---|---| 
-| AlwaysFalse | 10002 | 9999 |
-| AlwaysFalse | 10002 | 9999 |
-| AlwaysTrue | 2 | 29999 |
-| AlwaysTrue | 2 | 29999 |
-| Random | 3974 | 22055 |
-| Random | 4008 | 21987 |
-| MyLoop | 10001 | 10001 |
-| MyLoop | 10001 | 10001 |
-| OpponentLoop | 3 | 29997 |
-| OpponentLoop | 3 | 29997 |
-| MySavedResult | 10001 | 10001 |
-| OpponentSavedResult | 3 | 29997 |
-| OpponentSavedResult | 3 | 29997 |
-| DoubleLoop | 10001 | 10001 |
-| DoubleLoop | 10001 | 10001 |
-| Tit or Tat | 10001 | 10001 |
-| Tit or Tat | 10001 | 10001 |
+|Opponent|Opponent's Prison Years|My Team's Prison Years|Shared Prison Years|Total PrisonYears| 
+|---|---|---|---|---| 
+| AlwaysFalse | 10002 | 9999 | 10000 | 20001 |
+| AlwaysFalse | 10002 | 9999 | 10000 | 20001 |
+| AlwaysTrue | 2 | 29999 | 15000 | 30001 |
+| AlwaysTrue | 2 | 29999 | 15000 | 30001 |
+| Random | 4022 | 21959 | 12990 | 25981 |
+| Random | 4006 | 21991 | 12998 | 25997 |
+| MyLoop | 10001 | 10001 | 10001 | 20002 |
+| MyLoop | 10001 | 10001 | 10001 | 20002 |
+| OpponentLoop | 3 | 29997 | 15000 | 30000 |
+| OpponentLoop | 3 | 29997 | 15000 | 30000 |
+| MySavedResult | 10001 | 10001 | 10001 | 20002 |
+| OpponentSavedResult | 3 | 29997 | 15000 | 30000 |
+| OpponentSavedResult | 3 | 29997 | 15000 | 30000 |
+| DoubleLoop | 10001 | 10001 | 10001 | 20002 |
+| DoubleLoop | 10001 | 10001 | 10001 | 20002 |
+| Tit or Tat | 10001 | 10001 | 10001 | 20002 |
+| Tit or Tat | 10001 | 10001 | 10001 | 20002 |
 - ### MySavedResult: 
-|Opponent|Opponent's Prison Years|My Team's Prison Years| 
-|---|---|---| 
-| AlwaysFalse | 10002 | 9999 |
-| AlwaysFalse | 10002 | 9999 |
-| AlwaysTrue | 2 | 29999 |
-| AlwaysTrue | 2 | 29999 |
-| Random | 4005 | 21993 |
-| Random | 4039 | 21925 |
-| MyLoop | 10001 | 10001 |
-| MyLoop | 10001 | 10001 |
-| OpponentLoop | 3 | 29997 |
-| OpponentLoop | 3 | 29997 |
-| MySavedResult | 10001 | 10001 |
-| OpponentSavedResult | 3 | 29997 |
-| OpponentSavedResult | 3 | 29997 |
-| DoubleLoop | 10001 | 10001 |
-| DoubleLoop | 10001 | 10001 |
-| Tit or Tat | 10001 | 10001 |
-| Tit or Tat | 10001 | 10001 |
+|Opponent|Opponent's Prison Years|My Team's Prison Years|Shared Prison Years|Total PrisonYears| 
+|---|---|---|---|---| 
+| AlwaysFalse | 10002 | 9999 | 10000 | 20001 |
+| AlwaysFalse | 10002 | 9999 | 10000 | 20001 |
+| AlwaysTrue | 2 | 29999 | 15000 | 30001 |
+| AlwaysTrue | 2 | 29999 | 15000 | 30001 |
+| Random | 3986 | 22031 | 13008 | 26017 |
+| Random | 4027 | 21949 | 12988 | 25976 |
+| MyLoop | 10001 | 10001 | 10001 | 20002 |
+| MyLoop | 10001 | 10001 | 10001 | 20002 |
+| OpponentLoop | 3 | 29997 | 15000 | 30000 |
+| OpponentLoop | 3 | 29997 | 15000 | 30000 |
+| MySavedResult | 10001 | 10001 | 10001 | 20002 |
+| OpponentSavedResult | 3 | 29997 | 15000 | 30000 |
+| OpponentSavedResult | 3 | 29997 | 15000 | 30000 |
+| DoubleLoop | 10001 | 10001 | 10001 | 20002 |
+| DoubleLoop | 10001 | 10001 | 10001 | 20002 |
+| Tit or Tat | 10001 | 10001 | 10001 | 20002 |
+| Tit or Tat | 10001 | 10001 | 10001 | 20002 |
 - ### OpponentSavedResult: 
-|Opponent|Opponent's Prison Years|My Team's Prison Years| 
-|---|---|---| 
-| AlwaysFalse | 10000 | 10000 |
-| AlwaysFalse | 10000 | 10000 |
-| AlwaysTrue | 10000 | 25000 |
-| AlwaysTrue | 10000 | 25000 |
-| Random | 13969 | 17149 |
-| Random | 14017 | 17002 |
-| MyLoop | 29997 | 3 |
-| MyLoop | 29997 | 3 |
-| OpponentLoop | 10000 | 10000 |
-| OpponentLoop | 10000 | 10000 |
-| MySavedResult | 29997 | 3 |
-| MySavedResult | 29997 | 3 |
-| OpponentSavedResult | 10000 | 10000 |
-| DoubleLoop | 29995 | 4 |
-| DoubleLoop | 29995 | 4 |
-| Tit or Tat | 10000 | 10000 |
-| Tit or Tat | 10000 | 10000 |
+|Opponent|Opponent's Prison Years|My Team's Prison Years|Shared Prison Years|Total PrisonYears| 
+|---|---|---|---|---| 
+| AlwaysFalse | 10000 | 10000 | 10000 | 20000 |
+| AlwaysFalse | 10000 | 10000 | 10000 | 20000 |
+| AlwaysTrue | 10000 | 25000 | 17500 | 35000 |
+| AlwaysTrue | 10000 | 25000 | 17500 | 35000 |
+| Random | 14000 | 17021 | 15510 | 31021 |
+| Random | 14082 | 16977 | 15529 | 31059 |
+| MyLoop | 29997 | 3 | 15000 | 30000 |
+| MyLoop | 29997 | 3 | 15000 | 30000 |
+| OpponentLoop | 10000 | 10000 | 10000 | 20000 |
+| OpponentLoop | 10000 | 10000 | 10000 | 20000 |
+| MySavedResult | 29997 | 3 | 15000 | 30000 |
+| MySavedResult | 29997 | 3 | 15000 | 30000 |
+| OpponentSavedResult | 10000 | 10000 | 10000 | 20000 |
+| DoubleLoop | 29995 | 4 | 14999 | 29999 |
+| DoubleLoop | 29995 | 4 | 14999 | 29999 |
+| Tit or Tat | 10000 | 10000 | 10000 | 20000 |
+| Tit or Tat | 10000 | 10000 | 10000 | 20000 |
 - ### OpponentSavedResult: 
-|Opponent|Opponent's Prison Years|My Team's Prison Years| 
-|---|---|---| 
-| AlwaysFalse | 10000 | 10000 |
-| AlwaysFalse | 10000 | 10000 |
-| AlwaysTrue | 10000 | 25000 |
-| AlwaysTrue | 10000 | 25000 |
-| Random | 14087 | 16910 |
-| Random | 13966 | 17086 |
-| MyLoop | 29997 | 3 |
-| MyLoop | 29997 | 3 |
-| OpponentLoop | 10000 | 10000 |
-| OpponentLoop | 10000 | 10000 |
-| MySavedResult | 29997 | 3 |
-| MySavedResult | 29997 | 3 |
-| OpponentSavedResult | 10000 | 10000 |
-| DoubleLoop | 29995 | 4 |
-| DoubleLoop | 29995 | 4 |
-| Tit or Tat | 10000 | 10000 |
-| Tit or Tat | 10000 | 10000 |
+|Opponent|Opponent's Prison Years|My Team's Prison Years|Shared Prison Years|Total PrisonYears| 
+|---|---|---|---|---| 
+| AlwaysFalse | 10000 | 10000 | 10000 | 20000 |
+| AlwaysFalse | 10000 | 10000 | 10000 | 20000 |
+| AlwaysTrue | 10000 | 25000 | 17500 | 35000 |
+| AlwaysTrue | 10000 | 25000 | 17500 | 35000 |
+| Random | 13926 | 17001 | 15463 | 30927 |
+| Random | 14029 | 16948 | 15488 | 30977 |
+| MyLoop | 29997 | 3 | 15000 | 30000 |
+| MyLoop | 29997 | 3 | 15000 | 30000 |
+| OpponentLoop | 10000 | 10000 | 10000 | 20000 |
+| OpponentLoop | 10000 | 10000 | 10000 | 20000 |
+| MySavedResult | 29997 | 3 | 15000 | 30000 |
+| MySavedResult | 29997 | 3 | 15000 | 30000 |
+| OpponentSavedResult | 10000 | 10000 | 10000 | 20000 |
+| DoubleLoop | 29995 | 4 | 14999 | 29999 |
+| DoubleLoop | 29995 | 4 | 14999 | 29999 |
+| Tit or Tat | 10000 | 10000 | 10000 | 20000 |
+| Tit or Tat | 10000 | 10000 | 10000 | 20000 |
 - ### DoubleLoop: 
-|Opponent|Opponent's Prison Years|My Team's Prison Years| 
-|---|---|---| 
-| AlwaysFalse | 10002 | 9999 |
-| AlwaysFalse | 10002 | 9999 |
-| AlwaysTrue | 0 | 30000 |
-| AlwaysTrue | 0 | 30000 |
-| Random | 3993 | 22017 |
-| Random | 4020 | 21963 |
-| MyLoop | 10001 | 10001 |
-| MyLoop | 10001 | 10001 |
-| OpponentLoop | 4 | 29995 |
-| OpponentLoop | 4 | 29995 |
-| MySavedResult | 10001 | 10001 |
-| MySavedResult | 10001 | 10001 |
-| OpponentSavedResult | 4 | 29995 |
-| OpponentSavedResult | 4 | 29995 |
-| DoubleLoop | 10001 | 10001 |
-| Tit or Tat | 10001 | 10001 |
-| Tit or Tat | 10001 | 10001 |
+|Opponent|Opponent's Prison Years|My Team's Prison Years|Shared Prison Years|Total PrisonYears| 
+|---|---|---|---|---| 
+| AlwaysFalse | 10002 | 9999 | 10000 | 20001 |
+| AlwaysFalse | 10002 | 9999 | 10000 | 20001 |
+| AlwaysTrue | 0 | 30000 | 15000 | 30000 |
+| AlwaysTrue | 0 | 30000 | 15000 | 30000 |
+| Random | 3912 | 22179 | 13045 | 26091 |
+| Random | 4052 | 21899 | 12975 | 25951 |
+| MyLoop | 10001 | 10001 | 10001 | 20002 |
+| MyLoop | 10001 | 10001 | 10001 | 20002 |
+| OpponentLoop | 4 | 29995 | 14999 | 29999 |
+| OpponentLoop | 4 | 29995 | 14999 | 29999 |
+| MySavedResult | 10001 | 10001 | 10001 | 20002 |
+| MySavedResult | 10001 | 10001 | 10001 | 20002 |
+| OpponentSavedResult | 4 | 29995 | 14999 | 29999 |
+| OpponentSavedResult | 4 | 29995 | 14999 | 29999 |
+| DoubleLoop | 10001 | 10001 | 10001 | 20002 |
+| Tit or Tat | 10001 | 10001 | 10001 | 20002 |
+| Tit or Tat | 10001 | 10001 | 10001 | 20002 |
 - ### DoubleLoop: 
-|Opponent|Opponent's Prison Years|My Team's Prison Years| 
-|---|---|---| 
-| AlwaysFalse | 10002 | 9999 |
-| AlwaysFalse | 10002 | 9999 |
-| AlwaysTrue | 0 | 30000 |
-| AlwaysTrue | 0 | 30000 |
-| Random | 3948 | 22107 |
-| Random | 3972 | 22059 |
-| MyLoop | 10001 | 10001 |
-| MyLoop | 10001 | 10001 |
-| OpponentLoop | 4 | 29995 |
-| OpponentLoop | 4 | 29995 |
-| MySavedResult | 10001 | 10001 |
-| MySavedResult | 10001 | 10001 |
-| OpponentSavedResult | 4 | 29995 |
-| OpponentSavedResult | 4 | 29995 |
-| DoubleLoop | 10001 | 10001 |
-| Tit or Tat | 10001 | 10001 |
-| Tit or Tat | 10001 | 10001 |
+|Opponent|Opponent's Prison Years|My Team's Prison Years|Shared Prison Years|Total PrisonYears| 
+|---|---|---|---|---| 
+| AlwaysFalse | 10002 | 9999 | 10000 | 20001 |
+| AlwaysFalse | 10002 | 9999 | 10000 | 20001 |
+| AlwaysTrue | 0 | 30000 | 15000 | 30000 |
+| AlwaysTrue | 0 | 30000 | 15000 | 30000 |
+| Random | 4066 | 21871 | 12968 | 25937 |
+| Random | 4058 | 21887 | 12972 | 25945 |
+| MyLoop | 10001 | 10001 | 10001 | 20002 |
+| MyLoop | 10001 | 10001 | 10001 | 20002 |
+| OpponentLoop | 4 | 29995 | 14999 | 29999 |
+| OpponentLoop | 4 | 29995 | 14999 | 29999 |
+| MySavedResult | 10001 | 10001 | 10001 | 20002 |
+| MySavedResult | 10001 | 10001 | 10001 | 20002 |
+| OpponentSavedResult | 4 | 29995 | 14999 | 29999 |
+| OpponentSavedResult | 4 | 29995 | 14999 | 29999 |
+| DoubleLoop | 10001 | 10001 | 10001 | 20002 |
+| Tit or Tat | 10001 | 10001 | 10001 | 20002 |
+| Tit or Tat | 10001 | 10001 | 10001 | 20002 |
 - ### Tit or Tat: 
-|Opponent|Opponent's Prison Years|My Team's Prison Years| 
-|---|---|---| 
-| AlwaysFalse | 10000 | 10000 |
-| AlwaysFalse | 10000 | 10000 |
-| AlwaysTrue | 19998 | 20001 |
-| AlwaysTrue | 19998 | 20001 |
-| Random | 15991 | 15991 |
-| Random | 15982 | 15982 |
-| MyLoop | 10001 | 10001 |
-| MyLoop | 10001 | 10001 |
-| OpponentLoop | 10000 | 10000 |
-| OpponentLoop | 10000 | 10000 |
-| MySavedResult | 10001 | 10001 |
-| MySavedResult | 10001 | 10001 |
-| OpponentSavedResult | 10000 | 10000 |
-| OpponentSavedResult | 10000 | 10000 |
-| DoubleLoop | 10001 | 10001 |
-| DoubleLoop | 10001 | 10001 |
-| Tit or Tat | 10000 | 10000 |
+|Opponent|Opponent's Prison Years|My Team's Prison Years|Shared Prison Years|Total PrisonYears| 
+|---|---|---|---|---| 
+| AlwaysFalse | 10000 | 10000 | 10000 | 20000 |
+| AlwaysFalse | 10000 | 10000 | 10000 | 20000 |
+| AlwaysTrue | 19998 | 20001 | 19999 | 39999 |
+| AlwaysTrue | 19998 | 20001 | 19999 | 39999 |
+| Random | 15978 | 15978 | 15978 | 31956 |
+| Random | 16050 | 16050 | 16050 | 32100 |
+| MyLoop | 10001 | 10001 | 10001 | 20002 |
+| MyLoop | 10001 | 10001 | 10001 | 20002 |
+| OpponentLoop | 10000 | 10000 | 10000 | 20000 |
+| OpponentLoop | 10000 | 10000 | 10000 | 20000 |
+| MySavedResult | 10001 | 10001 | 10001 | 20002 |
+| MySavedResult | 10001 | 10001 | 10001 | 20002 |
+| OpponentSavedResult | 10000 | 10000 | 10000 | 20000 |
+| OpponentSavedResult | 10000 | 10000 | 10000 | 20000 |
+| DoubleLoop | 10001 | 10001 | 10001 | 20002 |
+| DoubleLoop | 10001 | 10001 | 10001 | 20002 |
+| Tit or Tat | 10000 | 10000 | 10000 | 20000 |
 - ### Tit or Tat: 
-|Opponent|Opponent's Prison Years|My Team's Prison Years| 
-|---|---|---| 
-| AlwaysFalse | 10000 | 10000 |
-| AlwaysFalse | 10000 | 10000 |
-| AlwaysTrue | 19998 | 20001 |
-| AlwaysTrue | 19998 | 20001 |
-| Random | 15993 | 15996 |
-| Random | 16044 | 16044 |
-| MyLoop | 10001 | 10001 |
-| MyLoop | 10001 | 10001 |
-| OpponentLoop | 10000 | 10000 |
-| OpponentLoop | 10000 | 10000 |
-| MySavedResult | 10001 | 10001 |
-| MySavedResult | 10001 | 10001 |
-| OpponentSavedResult | 10000 | 10000 |
-| OpponentSavedResult | 10000 | 10000 |
-| DoubleLoop | 10001 | 10001 |
-| DoubleLoop | 10001 | 10001 |
-| Tit or Tat | 10000 | 10000 |
+|Opponent|Opponent's Prison Years|My Team's Prison Years|Shared Prison Years|Total PrisonYears| 
+|---|---|---|---|---| 
+| AlwaysFalse | 10000 | 10000 | 10000 | 20000 |
+| AlwaysFalse | 10000 | 10000 | 10000 | 20000 |
+| AlwaysTrue | 19998 | 20001 | 19999 | 39999 |
+| AlwaysTrue | 19998 | 20001 | 19999 | 39999 |
+| Random | 16003 | 16006 | 16004 | 32009 |
+| Random | 15998 | 15998 | 15998 | 31996 |
+| MyLoop | 10001 | 10001 | 10001 | 20002 |
+| MyLoop | 10001 | 10001 | 10001 | 20002 |
+| OpponentLoop | 10000 | 10000 | 10000 | 20000 |
+| OpponentLoop | 10000 | 10000 | 10000 | 20000 |
+| MySavedResult | 10001 | 10001 | 10001 | 20002 |
+| MySavedResult | 10001 | 10001 | 10001 | 20002 |
+| OpponentSavedResult | 10000 | 10000 | 10000 | 20000 |
+| OpponentSavedResult | 10000 | 10000 | 10000 | 20000 |
+| DoubleLoop | 10001 | 10001 | 10001 | 20002 |
+| DoubleLoop | 10001 | 10001 | 10001 | 20002 |
+| Tit or Tat | 10000 | 10000 | 10000 | 20000 |

@@ -11,8 +11,8 @@ public class PrisonerI extends Prisoner {
     private Boolean firstDecision = false;
 
     public Boolean makeDecision(ArrayList<Boolean> myDecisions, ArrayList<Boolean> opponentDecisions) {
-        if (!opponentDecisions.isEmpty()){
-            return opponentDecisions.get(opponentDecisions.size()-1);
+        if (!opponentDecisions.isEmpty()) {
+            return opponentDecisions.get(opponentDecisions.size() - 1);
         }
         return firstDecision;
     }
