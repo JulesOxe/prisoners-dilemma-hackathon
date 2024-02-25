@@ -5,7 +5,7 @@ A small hackathon project in which a group of friends can develop several small 
 ## Introduction
 The aim of the project is for each participant to develop a small algorithm which, based on its previous decisions and those of its counterpart, repeatedly decides whether to betray or cover up for its counterpart. The aim is to be sentenced to as few years in prison as possible.
 If you have never dealt with the prisoner's dilemma before, you can read up on it here:
-https://en.wikipedia.org/wiki/Prisoner%27s_dilemma
+[Wikipedia: Prisoner's Dilemma](https://en.wikipedia.org/wiki/Prisoner%27s_dilemma)
 
 ## Prisoner's Dilemma
 The prisoner's dilemma is about deciding whether to betray or cover up without knowing your accomplice's decision. Four combinations result from your own decision and that of your accomplice:
@@ -34,7 +34,7 @@ On the basis of his own saved decisions and those of his counterpart, the algori
 ## Procedure Of The Hackathon
 - each participant receives a letter to identify their class (letter replaces the X listed everywhere).
 
-- each participant creates their own `PrisonerX` class.  This can be done in a second repository, which can be found under this link:
+- each participant creates their own `PrisonerX` class.  This can be done in a second repository, which can be found under this link: [Prisoner's Dilemma Workspace](https://github.com/JulesOxe/prisoners-dilemma-hackathon-workspace)
 In the repository, everyone can create their own branch and develop their own class. Tests are provided to check the rough correctness of the developed algorithm. More about this in the repository's own README file.
 
 - the leader of the hackathon collects the individual classes after the development time and copies them into the `Prisoner` package (there are currently a few sample dummy classes here that can be tested in advance and should then be removed).
